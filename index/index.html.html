@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Percussion Boy Sounds Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #111;
+      color: #fff;
+    }
+    header img {
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+    .buttons {
+      margin: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+    .genre {
+      display: none;
+      margin-top: 20px;
+    }
+    audio {
+      margin: 10px 0;
+    }
+  </style>
+  <script>
+    function showGenre(genre) {
+      const sections = document.querySelectorAll('.genre');
+      sections.forEach(sec => sec.style.display = 'none');
+      const active = document.getElementById(genre);
+      if (active) active.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="LOGO/logo.png" alt="SyntaxBeatz Logo">
+    <h1>The Percussion Boy Sounds Lab</h1>
+    <p>Producer: SyntaxBeatz</p>
+    <p>Email: buysyntaxbeats@gmail.com | Instagram: @syntaxbeat.z | Call/WhatsApp: 0789652371</p>
+  </header>
+
+  <div class="buttons">
+    <button onclick="showGenre('AFROBEATS')">AFROBEATS</button>
+    <button onclick="showGenre('AMAPIANO')">AMAPIANO</button>
+    <button onclick="showGenre('GENGETONE')">GENGETONE</button>
+    <button onclick="showGenre('DANCEHALL')">DANCEHALL</button>
+    <button onclick="showGenre('RAP')">RAP</button>
+    <button onclick="showGenre('HIPHOP')">HIPHOP</button>
+    <button onclick="showGenre('REGGAE')">REGGAE</button>
+    <button onclick="showGenre('MERGED')">MERGED</button>
+    <button onclick="showGenre('SAMPLED')">SAMPLED</button>
+    <button onclick="showGenre('OTHERS')">OTHERS</button>
+  </div>
+
+  <!-- AFROBEATS -->
+  <div id="AFROBEATS" class="genre">
+    <h2>AFROBEATS</h2>
+    <p>UTAMU - prodby.SyntaxBeatz</p>
+    <audio controls preload="auto">
+      <source src="AFROBEATS/UTAMU_prodby.SyntaxBeatz.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- AMAPIANO -->
+  <div id="AMAPIANO" class="genre">
+    <h2>AMAPIANO</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- GENGETONE -->
+  <div id="GENGETONE" class="genre">
+    <h2>GENGETONE</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- DANCEHALL -->
+  <div id="DANCEHALL" class="genre">
+    <h2>DANCEHALL</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- RAP -->
+  <div id="RAP" class="genre">
+    <h2>RAP</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- HIPHOP -->
+  <div id="HIPHOP" class="genre">
+    <h2>HIPHOP</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- REGGAE -->
+  <div id="REGGAE" class="genre">
+    <h2>REGGAE</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- MERGED -->
+  <div id="MERGED" class="genre">
+    <h2>MERGED</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- SAMPLED -->
+  <div id="SAMPLED" class="genre">
+    <h2>SAMPLED</h2>
+    <p>No beats yet.</p>
+  </div>
+
+  <!-- OTHERS -->
+  <div id="OTHERS" class="genre">
+    <h2>OTHERS</h2>
+    <p>No beats yet.</p>
+  </div>
+</body>
+</html>
+
